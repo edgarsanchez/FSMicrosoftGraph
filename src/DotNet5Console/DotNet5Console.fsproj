@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <WarnOn>3390;$(WarnOn)</WarnOn>
+      <UserSecretsId>4e40447d-0f39-4189-ab83-217ea1387946</UserSecretsId>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Authentication.fs" />
+        <Compile Include="GraphHelper.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
+      <PackageReference Include="Microsoft.Graph" Version="3.33.0" />
+      <PackageReference Include="Microsoft.Identity.Client" Version="4.32.0" />
+      <PackageReference Include="Ply" Version="0.3.1" />
+      <PackageReference Include="TimeZoneConverter" Version="3.5.0" />
+    </ItemGroup>
+
+</Project>
